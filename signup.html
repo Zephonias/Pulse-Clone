@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>Pulse</title>
 </head>
 <body>
@@ -33,14 +34,15 @@
                 <input type="password" name="psw" required>
 
                 <label for="psw-repeat">Confirm  Password</label>
-                <input type="password" name="psw-repeat" required>
-
+                <input type="password" name="psw-repeat" required>   
+                
+            </div>
+            <div class="site">
                 <h3>Your Pulse Site Address</h3>
                 <p>Every Pulse account has its own unique web address where you'll log in. Remember to bookmark it!</p>
 
-                <input type="text" name="siteName"><p>.pulseapp.com</p>
+                <input type="text" name="siteName"><label for="">.pulseapp.com</label>
                 <p>Letters and numbers only, no spaces.</p>
-
             </div>
         </form>
         
@@ -61,7 +63,7 @@
         </div>
            
         <div class="bill">
-            <h1>Billing Information</h1>
+            <h1>Billing Information  <box-icon name='lock-alt' type='solid' color='#00ad6a' ></box-icon></h1>
         <form action="">
             <div class="container2">
                 <label for="NameOnCard">Name on card</label>
@@ -78,6 +80,7 @@
         <div class="cancel">
             <h5>Cancel any time.</h5>
             <p>Your first month is free, but we ask for your credit card upfront to prevent an interruption in service. We won't charge you until the end of your 30-day free trial.</p>
+            <br>
             <p>We'll email you reminders before your free trial is up, and we'll send you invoices each month when we charge your card.</p>
         </div>
     </div>

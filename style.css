@@ -26,6 +26,13 @@ nav a:last-child{
     padding: 5px 25px;
     border: solid #00ad6a 2px;
 }
+nav a:last-child:hover{
+    position: relative;
+    color: #00ad6a;
+    left: 10px;
+    top: -10px;
+    box-shadow: -5px 5px #00ad6a;
+}
 .navbar{
     display: flex;
     justify-content: space-around;
@@ -125,7 +132,7 @@ nav a:last-child{
 .sign{
     text-align: center;
     padding: 50px;
-    background-color: #00ad6a;
+    background-image: linear-gradient(to right, #00ad6a, #09ffa0);
 }
 .sign a{
     font-size: 45px;
@@ -216,6 +223,7 @@ nav a:last-child{
 .details a:hover{
     color: #fff;
 }
+
 .logosign, .product, .company, .resources{
     display: flex;
     flex-direction: column;
@@ -230,12 +238,19 @@ nav a:last-child{
 }
 
 .logosign a{
-    border: 5px solid #00ad6a;
-    background-color: #00ad6a;
-    padding: 12px 19px;
+    background-image: linear-gradient(to right, #00ad6a, #09ffa0);
+    padding: 12px 30px;
     margin-top: 50px;
     text-decoration: none;
+    font-size: 22px;
     font-weight: 700;
+    color: #080c16;
+}
+.logosign a:hover{
+    position: relative;
+    left: 10px;
+    top: -10px;
+    box-shadow: -7px 7px #797979;
     color: #080c16;
 }
 .logosign img{
@@ -250,7 +265,7 @@ nav a:last-child{
 }
 
 .copy p a{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 10;
     color: rgb(159, 157, 155);
     line-height: 1.5;
@@ -260,6 +275,13 @@ nav a:last-child{
 
 .testimonials{
     background-color: #eafaf1;
+}
+
+.person1 img, .person2 img, .person3 img, .person4 img{
+    border: 1px solid #080c16;
+    border-radius: 50%;
+    margin: 10px auto;
+    transform: scale(1.2);
 }
 
 .testimonials h1{
@@ -292,6 +314,9 @@ nav a:last-child{
 }
 .testimonials-section a{
     color: #00ad6a;
+    margin-top: -25px;
+    font-size: 20px;
+    font-weight: 700;
 }
 .person1, .person2, .person3, .person4{
     display: grid;
@@ -307,6 +332,8 @@ nav a:last-child{
 .Story p{
     text-align: center;
     padding: 50px 0;
+    font-size: 20px;
+    color: #2e3139;
 }
 .stories{
     display: grid;
@@ -319,7 +346,7 @@ nav a:last-child{
     justify-content: space-between;
     padding: 0 25px;
     padding-bottom: 50px;
-    border: 1px solid rgb(162, 162, 162);
+    border: 1px solid rgb(197, 195, 195);
     background-color: #fff;
 }
 
@@ -342,6 +369,7 @@ nav a:last-child{
     text-align: center;
     padding: 0 240px;
     background-color: #eafaf1;
+    padding-bottom: 50px;
 }
 .try h1{
     font-size: 70px;
@@ -394,9 +422,11 @@ nav a:last-child{
 }
 .business .top{
     text-align: center;
-    font-size: 20px;
+    padding: 5px 0;
+    font-size: 15px;
     background-color: #00ad6a;
     border-radius: 8px 8px 0 0;
+    color: #fff;
 }
 .business h1{
     font-size: 50px;
@@ -413,14 +443,15 @@ nav a:last-child{
     text-align: center;
     text-decoration: none;
     padding: 10px 20px;
-    border: 1px solid #05da89;
+    border: 1px solid #06f398;
     width: 50%;
-    background-color: #05da89;
+    background-color: #06f398;
     color: #2e3139;
     font-weight: 700;
 }
 .business a:hover{
     color: #080c16;
+    transform: scale(1.1);
 }
 .more1{
     margin-bottom: 10px;
@@ -432,8 +463,11 @@ nav a:last-child{
 .business ul{
     padding: 15px 35px 25px 35px;
     margin-bottom: 30px;
+    list-style: none;
 }
 .business ul li{
+    display: grid;
+    grid-template-columns: 8% 92%;
     padding: 5px 5px;
     margin-bottom: 5px;
     font-size: 20px;
@@ -453,7 +487,7 @@ nav a:last-child{
     font-size: 300;
     text-align: center;
     color: #2e3139;
-    background-color: #cecece;
+    background-color: #f0f0f0;
 }
 .extra h2{
     text-align: center;
@@ -478,6 +512,7 @@ nav a:last-child{
 }
 .extra a:hover{
     color: #080c16;
+    transform: scale(1.1);
 }
 .more2{
     margin-bottom: 5px;
@@ -489,12 +524,24 @@ nav a:last-child{
 .extra ul{
     padding: 15px 30px 25px 35px;
     margin-bottom: 30px;
+    list-style: none;
 }
 .extra ul li{
+    display: grid;
+    grid-template-columns: 8% 92%;
     padding: 5px 5px;
     font-size: 20px;
     font-weight: 300;
     line-height: 1.5;
+}
+.extra .background{
+    z-index: 3px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #eafaf1;
+    border: 1px solid #eafaf1;
 }
 
 .subvert{
@@ -519,7 +566,7 @@ nav a:last-child{
     margin-bottom: 140px;
 }
 .faq{
-    padding: 50px 240px;
+    padding: px 240px;
 }
 .faq h1{
     font-size: 70px;
@@ -567,13 +614,14 @@ nav a:last-child{
 }
 form{
     border: 0.5px solid #8f8e8e;
-    padding: 40px 30px;
+    
     margin: 20px 10px 40px 10px;
     box-shadow: 3px 3px 30px #c5c4c4;
 }
 form .container, form .container2{
     display: flex;
     flex-direction: column;
+    padding: 40px 30px;
 }
 form .container input{
     width: 100%;
@@ -588,13 +636,47 @@ form .container h3,
 form .container p{
     font-size: 18px;
 }
+.site{
+    width: 100%;
+    margin-top: 30px;
+    padding: 40px 30px;
+    background-color: #e8e8e8;
+    color: #696969;
+    line-height: 1.5;
+}
+.site h3, .site p{
+    font-size: 15px;
+}
+.site p{
+    font-weight: 400;
+}
+.site input{
+    margin-top: 30px;
+    width: 50%;
+    border-radius: 5px;
+    border-color: #c5c4c4;
+    box-shadow: 3px 0 10px #c5c4c4;
+    text-indent: 10px;
+}
+.site input:hover, .container input:hover, .container2 input:hover{
+    border: 1px solid #2596be;
+    box-shadow: 1px 0 5px #2596be ;
+}
+
 .plus, .cancel{
-    padding: 30px 50px;
+    padding: 25px 50px;
     padding-right: 80px;
+}
+.cancel{
+    padding-top: 80px;
 }
 .plus h3, .plus p, .plus a,
 .cancel h3, .cancel p, .cancel a{
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+.plus p{
+    margin-bottom: 30px;
 }
 
 .plus h2{
@@ -630,7 +712,9 @@ form .container p{
 }
 .plus a{
     padding: 30px 0;
+    font-size: 25px;
     font-weight: 700;
+    color: #62b6d5;
 }
 .bill h1{
     padding: 0 10px;
@@ -684,6 +768,7 @@ form .container p{
 }
 
 .signfooter{
+    margin-top: 150px;
     background-color: #080c16;
     display: grid;
     grid-template-columns: 1fr 1fr;
