@@ -6,7 +6,7 @@
     font-size: 25px;
 }
 nav{
-    padding: 60px 200px;
+    padding: 45px 240px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,9 +15,12 @@ nav{
 }
 nav a{
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 50px;
     color: #00ad6a;
     font-size: 20px;
+}
+.navbar a:hover, a:focus{
+    color: #080c16;
 }
 nav a:last-child{
     padding: 5px 25px;
@@ -28,7 +31,10 @@ nav a:last-child{
     justify-content: space-around;
     align-items: center;
 }
-
+.logo img{
+    width: 150px;
+    height: 100px;
+}
 .trial{
     background-color: #eafaf1;
     width: 100%;
@@ -41,7 +47,7 @@ nav a:last-child{
     line-height: 65pt;
 }
 .content h1{
-    margin-top: 100px;
+    margin-top: 70px;
     font-size: 80px;
 }
 .content h2{
@@ -56,27 +62,635 @@ nav a:last-child{
     color: white;
     font-weight: 600;
     font-size: 30px;
-    padding: 20px 35px;
+    padding: 25px 50px;
     background-color: #2596be;
     border: 1px solid #2596be;
 }
 
 .manage{
+    padding: 80px 250px;
+}
+.manage-top{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 100px;
+    grid-template-columns: 30% 70%;
+    gap: 120px;
 }
-.manage .image{
-    grid-column-start: 2;
-    grid-column-end: 4;
+.manage-top .text{
+    display: flex;
+    align-items: center;
 }
-.manage h2{
-    width: 30%;
-    margin: auto;
+.text h2{
+    font-size: 50px;
+    margin-right: 100px;
+}
+.flow{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    margin-top: 50px;
+    gap: 40px;
+    line-height: 1.5;
+}
+.flow p{
+    font-weight: 50;
+}
+
+.visualize{
+    padding: 80px 250px;
+    background-color: #eafaf1;
+}
+.manage-second{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 120px;
+}
+.manage-second .text2{
+    display: flex;
+    align-items: center;
+}
+.text2 h2{
+    font-size: 50px;
+    margin-right: 100px;
+}
+.flow2{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    margin-top: 50px;
+    gap: 40px;
+    line-height: 1.5;
+}
+.flow2 p{
+    font-weight: 50;
+}
+
+.sign{
     text-align: center;
+    padding: 50px;
+    background-color: #00ad6a;
+}
+.sign a{
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+}
+.sign a:hover{
+    color: rgb(27, 24, 24);
+}
+
+.connect{
+    padding: 80px 250px;
+}
+.manage-third{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 120px;
+}
+.manage-third .text3{
+    display: flex;
+    align-items: center;
+}
+.text3 h2{
+    font-size: 50px;
+    margin-right: 100px;
+}
+.flow3{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    margin-top: 50px;
+    gap: 40px;
+    line-height: 1.5;
+}
+.flow3 p{
+    font-weight: 50;
+}
+
+.Share{
+    padding: 80px 250px;
+    background-color: #eafaf1;
+}
+.manage-fourth{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 120px;
+}
+.manage-fourth .text4{
+    display: flex;
+    align-items: center;
+}
+.text4 h2{
+    font-size: 50px;
+    margin-right: 100px;
+}
+.flow4{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    margin-top: 50px;
+    gap: 40px;
+    line-height: 1.5;
+}
+.flow4 p{
+    font-weight: 50;
+}
+
+.footer{
+    padding: 100px 100px 20px 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #080c16;
+}
+
+.details{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 100px;
+    line-height: 2.3;
+}
+.details h3{
+    color: #fff;
+}
+.details a{
+    color: #02e48d;
+    text-decoration: none;
+}
+.details a:hover{
+    color: #fff;
+}
+.logosign, .product, .company, .resources{
+    display: flex;
+    flex-direction: column;
+
+}
+.logosign{
+    justify-content: space-between;
+    margin-right: 250px;
+}
+.product{
+    margin-left: 50px;
+}
+
+.logosign a{
+    border: 5px solid #00ad6a;
+    background-color: #00ad6a;
+    padding: 12px 19px;
+    margin-top: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #080c16;
+}
+.logosign img{
+    width: 160px;
+    height: 66px;
+}
+
+.copy p{
+    font-size: 15px;
+    font-weight: 10;
+    color: rgb(159, 157, 155);
+}
+
+.copy p a{
+    font-size: 18px;
+    font-weight: 10;
+    color: rgb(159, 157, 155);
+    line-height: 1.5;
+}
+
+/* Customer Stories Styles below this line*/
+
+.testimonials{
+    background-color: #eafaf1;
+}
+
+.testimonials h1{
+    font-size: 70px;
+    text-align: center;
+    padding: 5px 450px;
+}
+.testimonials-section{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 10px;
+    padding: 20px 240px;
+}
+.testimonials-section img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.testimonials-section p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 20px 10px;
+}
+.testimonials-section h5{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 0;
+}
+.testimonials-section a{
+    color: #00ad6a;
+}
+.person1, .person2, .person3, .person4{
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.5fr 1fr;
+    gap: 0px;
+}
+
+
+.Story{
+    padding: 40px 240px;
+    background-color: rgb(251, 251, 251);
+}
+.Story p{
+    text-align: center;
+    padding: 50px 0;
+}
+.stories{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+.story-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 25px;
+    padding-bottom: 50px;
+    border: 1px solid rgb(162, 162, 162);
+    background-color: #fff;
+}
+
+.story-items p{
+    text-align: start;
+    font-size: 22px;
+    font-weight: 200;
+}
+.story-items h5{
+    font-size: 18px;
+}
+.story-items a{
+    font-size: 18px;
+    color: #00ad6a;
+}
+
+/* Pricing style below this line*/
+
+.try{
+    text-align: center;
+    padding: 0 240px;
+    background-color: #eafaf1;
+}
+.try h1{
+    font-size: 70px;
+    padding: 0 440px;
+}
+.try p{
+    padding: 10px 380px;
+    font-size: 23px;
+    font-weight: 390;
+}
+
+.options{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 240px;
+    background-color: #eafaf1;
+}
+.basics{
+    padding: 60px 20px;
+}
+.basics h2{
+    margin-top: 70px;
+    padding: 0 70px 0 0;
+    color: #00ad6a;
+}
+.basics ul{
+    padding: 10px 20px;
+}
+.basics ul li{
+    padding: 5px 5px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.basics p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.basics p a{
+    font-size: 20px;
+    color: #080c16;
+    font-weight: 400;
+}
+.business{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #00ad6a;
+    border-radius: 15px 15px 0 0;
+    background-color: #fff;
+}
+.business .top{
+    text-align: center;
+    font-size: 20px;
+    background-color: #00ad6a;
+    border-radius: 8px 8px 0 0;
+}
+.business h1{
+    font-size: 50px;
+    text-align: center;
+    color: #00ad6a;
+    padding: 35px 0 5px 0;
+}
+.price1{
+    text-align: center;
+    font-weight: 200;
+}
+.business a{
+    margin: 30px auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #05da89;
+    width: 50%;
+    background-color: #05da89;
+    color: #2e3139;
+    font-weight: 700;
+}
+.business a:hover{
+    color: #080c16;
+}
+.more1{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #2e3139;
+}
+.business ul{
+    padding: 15px 35px 25px 35px;
+    margin-bottom: 30px;
+}
+.business ul li{
+    padding: 5px 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.extra{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-top: 50px;
+    border: 1px solid #e8e7e7;
+}
+.extra .topextra{
+    font-size: 18px;
+    padding: 30px 50px;
+    font-size: 300;
+    text-align: center;
+    color: #2e3139;
+    background-color: #cecece;
+}
+.extra h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+    padding: 20px 50px 0 50px;
+    color: #05da89;
+}
+.price2{
+    text-align: center;
+    font-weight: 300;
+}
+.extra a{
+    margin: 30px auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #05da89;
+    background-color: #05da89;
+    color: #2e3139;
+    font-weight: 700;
+}
+.extra a:hover{
+    color: #080c16;
+}
+.more2{
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #2e3139;
+}
+.extra ul{
+    padding: 15px 30px 25px 35px;
+    margin-bottom: 30px;
+}
+.extra ul li{
+    padding: 5px 5px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.subvert{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eafaf1;
+}
+.subvert img{
+    margin: 50px 0 30px 0;
+}
+.subvert p{
+    text-align: center;
+    font-size: 30px;
+    padding: 0 400px;
+    margin-bottom: 25px;
+}
+.subvert h5{
+    font-size: 17px;
+    color: #00ad6a;
+    margin-bottom: 140px;
+}
+.faq{
+    padding: 50px 240px;
+}
+.faq h1{
+    font-size: 70px;
+    margin: 40px 0;
+}
+.questions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+.question-items{
+    margin: 20px 0;
+}
+.question-items h2{
+    margin-bottom: 10px;
+}
+.question-items p{
+    font-weight: 300;
+    color: #8f8e8e;
+}
+
+/* Signup style below this line */
+
+.signupnav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.signupnav img{
+    margin: 8px auto;
+    width: 200px;
+    height: 80px;
+}
+.signupnav p{
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 23px;
+    color: #797979;
+}
+.signing{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 460px;
+    line-height: 1.5;
+}
+form{
+    border: 0.5px solid #8f8e8e;
+    padding: 40px 30px;
+    margin: 20px 10px 40px 10px;
+    box-shadow: 3px 3px 30px #c5c4c4;
+}
+form .container, form .container2{
+    display: flex;
+    flex-direction: column;
+}
+form .container input{
+    width: 100%;
+    height: 1.8em;
+    border-radius: 5px;
+    border-color: #c5c4c4;
+    box-shadow: 3px 0 10px #c5c4c4;
+    text-indent: 10px;
+}
+form .container label,
+form .container h3,
+form .container p{
+    font-size: 18px;
+}
+.plus, .cancel{
+    padding: 30px 50px;
+    padding-right: 80px;
+}
+.plus h3, .plus p, .plus a,
+.cancel h3, .cancel p, .cancel a{
+    font-size: 20px;
+}
+
+.plus h2{
+    font-size: 45px;
+    font-weight: 700;
+    color: #2e3139;
+}
+.testimonial-casimir{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 5px;
+    margin: 15px 0;
+    padding: 20px 0;
+    border-top: 1px solid #797979;
+    border-bottom: 1px solid #797979;
+}
+.testimonial-casimir h5{
+    font-size: 18px;
+}
+.testimonial-casimir img{
+    transform: scale(0.7);
+    border: 2px solid #e8e7e7;
+    border-radius: 50%;
+}
+.casimir-position{
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.casimir-position h5, .casimir-position h6{
+    font-size: 15px;
+}
+.plus a{
+    padding: 30px 0;
+    font-weight: 700;
+}
+.bill h1{
+    padding: 0 10px;
+}
+.container2 label, .container2 input{
+    padding: 10px 0;
+    font-size: 18px;
+}
+.container2 input{
+    border-radius: 5px;
+    border-color: #c5c4c4;
+    box-shadow: 3px 0 10px #c5c4c4;
+    text-indent: 20px;
+}
+.container2 p{
+    padding-top: 40px;
+    font-size: 18px;
+}
+
+.description{
+    padding: 0 460px;
+    margin-bottom: 50px;
+
+}
+.description p{
+    margin: 20px 0;
+    font-size: 22px;
+}
+.description label, .description a{
+    font-size: 20px;
+    color: #080c16;
+}
+.checks{
+    margin-bottom: 50px;
+}
+.checks a{
+    color: #2596be;
+    text-decoration: none;
+    font-weight: 900;
+}
+.descriptiontrial{
+    font-weight: 700;
+    color: #080c16;
+    background-color: #05da89;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+.description .descriptiontrial a{
     font-size: 50px;
 }
-.manage img{
-    margin: auto;
-    width: 40%;
+
+.signfooter{
+    background-color: #080c16;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px 250px;
+}
+.signfooter p, .signfooter a{
+    font-size: 15px;
+    font-weight: 300;
+    color: #9f9f9f;
 }
