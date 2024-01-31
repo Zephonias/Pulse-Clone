@@ -5,8 +5,11 @@
     font-family: 'Fira Sans', sans-serif;
     font-size: 25px;
 }
+body{
+    overflow-x: hidden;
+}
 nav{
-    padding: 45px 240px;
+    padding: 30px 180px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,9 +18,9 @@ nav{
 }
 nav a{
     text-decoration: none;
-    margin-left: 50px;
+    margin-left: 40px;
     color: #00ad6a;
-    font-size: 20px;
+    font-size: 18px;
 }
 .navbar a:hover, a:focus{
     color: #080c16;
@@ -38,57 +41,69 @@ nav a:last-child:hover{
     justify-content: space-around;
     align-items: center;
 }
+.menu{
+    display: none;
+}
 .logo img{
-    width: 150px;
-    height: 100px;
+    width: 120px;
+    height: 60px;
 }
 .trial{
     background-color: #eafaf1;
     width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #adadad;
 }
 .content{
     width: 100%;
     margin: auto;
     padding: 30px;
     text-align: center;
-    line-height: 65pt;
+    line-height: 45pt;
 }
 .content h1{
     margin-top: 70px;
-    font-size: 80px;
+    font-size: 60px;
 }
 .content h2{
-    font-size: 50px;
+    font-size: 38px;
 }
 .trial-button{
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .trial-button a{
     text-decoration: none;
     color: white;
     font-weight: 600;
-    font-size: 30px;
-    padding: 25px 50px;
-    background-color: #2596be;
-    border: 1px solid #2596be;
+    font-size: 24px;
+    padding: 20px 40px;
+    background-color: #37b4e2;
+    border: 1px solid #37b4e2;
+    margin-top: 30px;
 }
 
 .manage{
-    padding: 80px 250px;
+    padding: 30px 180px;
 }
 .manage-top{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 120px;
+    /* display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 120px; */
+    display: flex;
+    justify-content: space-between;
 }
 .manage-top .text{
     display: flex;
     align-items: center;
+    justify-content: start;
+}
+.manage-top img{
+    max-width: 100%;
 }
 .text h2{
-    font-size: 50px;
-    margin-right: 100px;
+    font-size: 40px;
+    /*margin-right: 100px;*/
 }
 .flow{
     display: grid;
@@ -97,26 +112,35 @@ nav a:last-child:hover{
     gap: 40px;
     line-height: 1.5;
 }
+.flow h3{
+    font-size: 20px;
+}
 .flow p{
+    font-size: 18px;
     font-weight: 50;
 }
 
 .visualize{
-    padding: 80px 250px;
+    padding: 30px 180px;
     background-color: #eafaf1;
+    padding-bottom: 50px;
 }
 .manage-second{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 120px;
+    /* display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 120px; */
+    display: flex;
+    justify-content: space-between;
 }
 .manage-second .text2{
     display: flex;
     align-items: center;
 }
+.image2 img{
+    max-width: 100%;
+}
 .text2 h2{
-    font-size: 50px;
-    margin-right: 100px;
+    font-size: 40px;
 }
 .flow2{
     display: grid;
@@ -125,8 +149,13 @@ nav a:last-child:hover{
     gap: 40px;
     line-height: 1.5;
 }
+.flow2 h3{
+    font-size: 20px;
+}
 .flow2 p{
+    font-size: 18px;
     font-weight: 50;
+    line-height: 1.5;
 }
 
 .sign{
@@ -135,7 +164,7 @@ nav a:last-child:hover{
     background-image: linear-gradient(to right, #00ad6a, #09ffa0);
 }
 .sign a{
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 700;
     color: white;
 }
@@ -144,20 +173,25 @@ nav a:last-child:hover{
 }
 
 .connect{
-    padding: 80px 250px;
+    padding: 30px 180px;
+    padding-bottom: 50px;
 }
 .manage-third{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 120px;
+    /* display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 120px; */
+    display: flex;
+    justify-content: space-between;
 }
 .manage-third .text3{
     display: flex;
     align-items: center;
 }
+.image3 img{
+    max-width: 100%;
+}
 .text3 h2{
-    font-size: 50px;
-    margin-right: 100px;
+    font-size: 40px;
 }
 .flow3{
     display: grid;
@@ -166,26 +200,36 @@ nav a:last-child:hover{
     gap: 40px;
     line-height: 1.5;
 }
+.flow3 h3{
+    font-size: 20px;
+}
 .flow3 p{
+    font-size: 18px;
     font-weight: 50;
+    line-height: 1.5;
 }
 
 .Share{
-    padding: 80px 250px;
+    padding: 30px 180px;
+    padding-bottom: 50px;
     background-color: #eafaf1;
 }
 .manage-fourth{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 120px;
+    /* display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 120px; */
+    display: flex;
+    justify-content: space-between;
 }
 .manage-fourth .text4{
     display: flex;
     align-items: center;
 }
+.image4 img{
+    max-width: 100%;
+}
 .text4 h2{
-    font-size: 50px;
-    margin-right: 100px;
+    font-size: 40px;
 }
 .flow4{
     display: grid;
@@ -194,12 +238,17 @@ nav a:last-child:hover{
     gap: 40px;
     line-height: 1.5;
 }
+.flow4 h3{
+    font-size: 20px;
+}
 .flow4 p{
+    font-size: 18px;
     font-weight: 50;
+    line-height: 1.5;
 }
 
 .footer{
-    padding: 100px 100px 20px 250px;
+    /* padding: 100px 100px 20px 180px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -207,9 +256,13 @@ nav a:last-child:hover{
 }
 
 .details{
-    display: grid;
-    grid-template-columns: 2.5fr 1fr 1fr 1fr;
-    gap: 5px;
+    padding: 100px 100px 20px 180px;
+    /* display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 5px; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     margin-bottom: 100px;
     line-height: 2.3;
 }
@@ -217,24 +270,28 @@ nav a:last-child:hover{
     color: #fff;
 }
 .details a{
+    font-size: 18px;
     color: #02e48d;
     text-decoration: none;
 }
 .details a:hover{
     color: #fff;
 }
-
-.logosign, .product, .company, .resources{
+.inner-det{
+    display: flex;
+    justify-content: start;
+}
+.product, .company, .resources{
     display: flex;
     flex-direction: column;
+    margin-right: 60px;
+}
 
-}
 .logosign{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin-right: 250px;
-}
-.product{
-    margin-left: 50px;
+    /* margin-right: 150px; */
 }
 
 .logosign a{
@@ -242,7 +299,7 @@ nav a:last-child:hover{
     padding: 12px 30px;
     margin-top: 50px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 700;
     color: #080c16;
 }
@@ -258,14 +315,17 @@ nav a:last-child:hover{
     height: 66px;
 }
 
+.copy{
+    padding: 0 100px 20px 180px;
+}
 .copy p{
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 10;
     color: rgb(159, 157, 155);
 }
 
 .copy p a{
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 10;
     color: rgb(159, 157, 155);
     line-height: 1.5;
@@ -778,4 +838,58 @@ form .container p{
     font-size: 15px;
     font-weight: 300;
     color: #9f9f9f;
+}
+
+
+/* features media query */
+@media screen and (max-width: 1101px){
+    .nav{
+        padding: 30px 100px;
+    }
+    .manage{
+        padding: 30px 140px;
+    }
+    .visualize{
+        padding: 30px 140px;
+    }
+    .connect{
+        padding: 30px 140px;
+    }
+    .Share{
+        padding: 30px 140px;
+    }
+    .navbar a{
+        font-size: 15px;
+    }
+    .logo img{
+        transform: scale(0.8);
+    }
+    .content h1{
+        font-size: 40px;
+    }
+    .content h2{
+        font-size: 25px;
+    }
+    .trial-button a{
+        font-size: 20px;
+    }
+    .details{
+        padding: 100px 60px 20px 120px;
+    }
+    .logosign img{
+        max-width: 100px;
+    }
+    .logosign a{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 940px){
+    .details{
+        display: flex;
+        flex-direction: column;
+    }
+    .logosign a{
+        max-width: 30%;
+        margin-bottom: 30px;
+    }
 }
